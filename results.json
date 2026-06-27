@@ -9,6 +9,18 @@
       500
     ]
   },
-  "test_prepare_data": "IndexError('too many indices for tensor of dimension 2')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_2969/1579568773.py\", line 59, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_2969/1579568773.py\", line 24, in test_prepare_data\n    'dev_texts_shape': dev_sequences[\"texts\"][\"input_ids\"].shape,\n                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\nIndexError: too many indices for tensor of dimension 2\n",
-  "test_model": "NameError(\"name 'load_model' is not defined\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_2969/1579568773.py\", line 59, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_2969/1579568773.py\", line 36, in test_model\n    model = load_model(model_name, tag2id)\n            ^^^^^^^^^^\nNameError: name 'load_model' is not defined. Did you mean: 'train_model'?\n"
+  "test_prepare_data": {
+    "dev_texts_shape": [
+      250,
+      61
+    ],
+    "train_labels_shape": [
+      1750,
+      77
+    ]
+  },
+  "test_model": {
+    "f1": 0.9774976831510286,
+    "f1_wo_o": 0.9525067127634409
+  }
 }
